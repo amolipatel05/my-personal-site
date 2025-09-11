@@ -20,9 +20,10 @@
   --animate-meteor: meteor 5s linear infinite;
 
   /* Animations for blobs */
-  --animate-blob-float: blob-float 12s ease-in-ut infinite;
+  --animate-blob-float: blob-float 12s ease-in-out infinite;
   --animate-blob-morph: blob-morph 10s ease-in-out infinite;
 
+  /* Keyframes */
   @keyframes float {
     0%,
     100% {
@@ -44,131 +45,188 @@
   }
 
   @keyframes fade-in {
-   from {
-    opacity: 0;
-    transform: translateY(20px);
-   }
-   to {
-    opacity: 1;
-    transform: translateY(0);
-   }
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
-  @keyframes meteor {
-    0% {
-      transform: rotate(215deg) translateX(0);
-      opacity: 1;
-    }
-    70% {
-      opacity: 1;
-    }
+  @keyframes blob-float {
+    0%,
     100% {
-      transform: rotate(215deg) translateX(-500px);
-      opacity: 0;
+      transform: translate(0, 0) scale(1);
+    }
+    50% {
+      transform: translate(-14px, 10px) scale(1.06);
+    }
+  }
+
+  @keyframes blob-morph {
+    0%,
+    100% {
+      border-radius: 42% 58% 62% 38% / 55% 45% 55% 45%;
+    }
+    50% {
+      border-radius: 58% 42% 38% 62% / 45% 55% 45% 55%;
     }
   }
 }
 
-  @layer base {
-    :root {
-      --background: 0 0% 94%;
-      --foreground: 222 47% 11%;
+@layer base {
+  :root {
+    /* Light mode (with blobs) */
+    --background: 0 0% 94%;
+    --foreground: 222 47% 11%;
 
-      --card: 0 0% 100%;
+    --card: 0 0% 100%;
 
-      --primary: 250 47% 60%;
-      --primary-foreground: 210 40% 98%;
+    --primary: 250 47% 60%;
+    --primary-foreground: 210 40% 98%;
 
-      --border: 213 32% 91%;
-    }
+    --border: 213 32% 91%;
 
-    .dark {
-      --background: 222 47% 4%;
-      --foreground: 213 31% 91%;
-
-      --card: 222 47% 8%;
-
-      --primary: 250 65% 65%;
-      --primary-foreground: 213 31% 91%;
-      
-      --border: 217 33% 20%;
-    }
-
-    * {
-      @apply border-border;
-    }
-
-    html {
-      @apply scroll-smooth;
-    }
-
-    body {
-      @apply bg-background text-foreground transition-colors duration-300;
-      font-feature-settings: "rlig" 1, "calt" 1;
-    }
+    --blob-1: #f7f5f0;
+    --blob-2: #332e34;
+    --blob-3: #a1a998;
+    --blob-4: #f1eadc;
+    --blob-5: #5e2011;
+    --blob-6: #d2b7ae;
+    --blob-7: #bacebc;
   }
 
-  @utility container {
-    margin-inline: auto;
-    padding-inline: 2rem;
+  /* Dark mode */
+  .dark {
+    --background: 222 47% 4%;
+    --foreground: 213 31% 91%;
 
-    @media (width >= 640px) {
-      max-width: 640px;
-    }
+    --card: 222 47% 8%;
 
-    @media (width >= 768px) {
-      max-width: 768px;
-    }
+    --primary: 250 65% 65%;
+    --primary-foreground: 213 31% 91%;
 
-    @media (width >= 1024px) {
-      max-width: 1024px;
-    }
-
-    @media (width >= 1280px) {
-      max-width: 1280px;
-    }
-
-    @media (width >= 1400px) {
-      max-width: 1400px;
-    }
+    --border: 217 33% 20%;
   }
 
-  @utility text-glow {
-    @apply relative;
-    text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
+  * {
+    @apply border-border;
   }
 
-  @utility card-hover {
-    @apply transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg;
-
+  /* Add smooth scrolling */
+  html {
+    @apply scroll-smooth;
   }
 
-  @utility gradient-border {
-    @apply relative rounded-md;
-    background: linear-gradient(to right, hsl(var(--card)), hsl(var(--card)));
-    background-clip: padding-box;
-    border: 1px solid transparent;
+  body {
+    @apply bg-background text-foreground transition-colors duration-300;
+    font-feature-settings: "rlig" 1, "calt" 1;
   }
+}
+
+/* Utilities */
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+
+  @media (width >= 640px) {
+    max-width: 640px;
+  }
+
+  @media (width >= 768px) {
+    max-width: 768px;
+  }
+
+  @media (width >= 1024px) {
+    max-width: 1024px;
+  }
+
+  @media (width >= 1280px) {
+    max-width: 1280px;
+  }
+
+  @media (width >= 1400px) {
+    max-width: 1400px;
+  }
+}
+
+@utility text-glow {
+  @apply relative;
+  text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
+}
+
+@utility card-hover {
+  @apply transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg;
+}
+
+@utility gradient-border {
+  @apply relative rounded-md;
+  background: linear-gradient(to right, hsl(var(--card)), hsl(var(--card)));
+  background-clip: padding-box;
+  border: 1px solid transparent;
+}
 
 @utility cosmic-button {
-    @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium 
-    transition-all duration-300 hover:shadow-[0_0_10px_rbga(139,92,246,0.5)] 
+  @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium 
+    transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)] 
     hover:scale-105 active:scale-95;
-  }
+}
 
-@utility star {
-    @apply absolute rounded-full bg-white;
-    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
-  }
+@utility blob-layer {
+  @apply fixed inset-0 -z-10 hidden;
+  background: #f5f5f5;
+}
 
-@utility meteor {
-    @apply absolute bg-linear-to-r from-white via-white to-transparent rounded-full;
-    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
-  }
+.blobs-on .blob-layer {
+  display: block;
+}
 
-  #root {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-  }
+@utility blob {
+  @apply absolute rounded-[55%] opacity-70;
+  filter: blur(80px);
+  animation: var(--animate-blob-float), var(--animate-blob-morph);
+  mix-blend-mode: multiply;
+
+  animation: var(--animate-blob-float), var(--animate-blob-morph);
+  will-change: transform, border-radius;
+
+  background: radial-gradient(
+    circle at 30% 30%,
+    var(--blob-color, var(--blob-1)),
+    transparent 60%
+  );
+}
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+/* LIGHT MODE: show blob background on <html>, make body transparent so it doesn't cover it */
+html:not(.dark) {
+  background:
+    radial-gradient(60vw 60vw at 15% 20%, rgba(247,245,240,0.95) 0%, rgba(247,245,240,0.55) 35%, transparent 60%),
+    radial-gradient(50vw 50vw at 75% 15%, rgba(210,183,174,0.90) 0%, rgba(210,183,174,0.45) 30%, transparent 60%),
+    radial-gradient(48vw 48vw at 80% 70%, rgba(168,116,87,0.85) 0%, rgba(168,116,87,0.40) 28%, transparent 60%),
+    radial-gradient(54vw 54vw at 35% 75%, rgba(169,159,152,0.85) 0%, rgba(169,159,152,0.45) 32%, transparent 62%),
+    radial-gradient(45vw 45vw at 55% 50%, rgba(86,69,60,0.70) 0%, rgba(86,69,60,0.35) 24%, transparent 58%),
+    radial-gradient(40vw 40vw at 12% 75%, rgba(51,46,52,0.50) 0%, rgba(51,46,52,0.25) 22%, transparent 58%),
+    #ffffff;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* make the body transparent in light mode so the <html> gradients are visible */
+html:not(.dark) body {
+  background: transparent !important;
+}
+
+/* DARK MODE: use your existing near-black background */
+html.dark {
+  background: hsl(var(--background));
+}
+
