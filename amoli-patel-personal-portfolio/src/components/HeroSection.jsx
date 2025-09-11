@@ -19,10 +19,18 @@ export const HeroSection = () => {
               Patel
             </span>
           </h1>
+
+          <div className="flex justify-center pt-4">
+            <img
+              src="/images/headshot.png"
+              alt="Amoli Patel"
+              className="w-100 h-70 object-cover rounded-br-lg shadow-lg shadow-black/50 opacity-5 animate-fade-in-delay-3"
+            ></img>
+          </div>
+
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-4">
             can add text here
           </p>
-
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
             <a href="#projects" className="cosmic-button">
               View My Work
