@@ -23,14 +23,14 @@ export const AboutSection = () => {
               applications and creating seamless user experiences.
             </p>
             <p className="text-muted-foreground">
-              in my downtime, trying some new crafty hobby, cheffin it up in the
+              in my downtime, i enjoy trying new crafty hobbies, cheffin it up in the
               kitchen, spending time outside, or browsing on pinterest and
               depop.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
               <a href="#contact" className="cosmic-button">
-                Get in Touch
+                Get in touch
               </a>
 
               <a
