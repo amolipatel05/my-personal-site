@@ -4,6 +4,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";
 import { ProjectsSection } from "../components/ProjectsSection";
 import { ContactSection } from "../components/ContactSection";
+import { PicturesSection } from "../components/PicturesSection";
 
 export const Home = () => {
   return (
@@ -22,6 +23,9 @@ export const Home = () => {
 
       {/* Projects */}
       <ProjectsSection />
+
+      {/* Pictures
+      <PicturesSection /> */}
 
       {/* Contact */}
       <ContactSection />

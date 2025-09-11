@@ -1,4 +1,5 @@
-import { Briefcase, Code, User } from "lucide-react";
+import { Hammer, Code, Book } from "lucide-react";
+import { PicturesSection } from "./PicturesSection";
 
 export const AboutSection = () => {
   return (
@@ -11,22 +12,31 @@ export const AboutSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <h3 className="text-2xl font-semibold">Passionate Web Developer</h3>
+            <h3 className="text-2xl font-semibold">a little bit about me:</h3>
 
             <p className="text-muted-foreground">
-              p1 hwohowoiciodooho jcodshuochdsuhuoousc
+              hello, my name is amoli patel! i'm motivated, ambitious, and
+              always looking to learn/try new things.
+            </p>
+            <p>
+              as an aspiring software engineer, i enjoy building web
+              applications and creating seamless user experiences.
             </p>
             <p className="text-muted-foreground">
-              p2 ducsouco ciowiocwe ucsdboinow
+              in my downtime, trying some new crafty hobby, cheffin it up in the
+              kitchen, spending time outside, or browsing on pinterest and
+              depop.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
               <a href="#contact" className="cosmic-button">
                 Get in Touch
               </a>
-          
+
               <a
-                href="\amoli-patel-resume.pdf" target="_blank" rel="noopener noreferrer"
+                href="/amoli-patel-resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 
              transition-all duration-300 transform hover:scale-105"
               >
@@ -42,10 +52,37 @@ export const AboutSection = () => {
                   <Code className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Web Development</h4>
-                  <p className="text-muted-foreground">
-                    uiehewuhuoew hiwoehcewhohweio ioewoiniweioceiwocio
-                  </p>
+                  <h4 className="font-semibold text-lg pb-2">languages</h4>
+                  <div class="text-left space-y-3">
+                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                      {" "}
+                      Java{" "}
+                    </p>
+                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                      {" "}
+                      Python{" "}
+                    </p>
+                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                      {" "}
+                      TypeScript{" "}
+                    </p>
+                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                      {" "}
+                      JavaScript{" "}
+                    </p>
+                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                      {" "}
+                      HTML{" "}
+                    </p>
+                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                      {" "}
+                      CSS{" "}
+                    </p>
+                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                      {" "}
+                      Racket BSL{" "}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -53,13 +90,44 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <User className="h-6 w-6 text-primary" />
+                  <Book className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Web Development</h4>
-                  <p className="text-muted-foreground">
-                    uiehewuhuoew hiwoehcewhohweio ioewoiniweioceiwocio
-                  </p>
+                  <h4 className="font-semibold text-lg pb-2">frameworks and libraries</h4>
+                  <div class="text-left space-y-3">
+                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                      {" "}
+                      React{" "}
+                    </p>
+                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                      {" "}
+                      Next.js{" "}
+                    </p>
+                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                      {" "}
+                      Tailwind CSS{" "}
+                    </p>
+                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                      {" "}
+                      Node.js{" "}
+                    </p>
+                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                      {" "}
+                      Bun{" "}
+                    </p>
+                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                      {" "}
+                      tRPC{" "}
+                    </p>
+                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                      {" "}
+                      Prisma{" "}
+                    </p>
+                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                      {" "}
+                      JUnit{" "}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -67,13 +135,39 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Briefcase className="h-6 w-6 text-primary" />
+                  <Hammer className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Web Development</h4>
-                  <p className="text-muted-foreground">
-                    uiehewuhuoew hiwoehcewhohweio ioewoiniweioceiwocio
-                  </p>
+                  <div className="text-left">
+                  <h4 className="font-semibold text-lg pb-2">frameworks and libraries</h4>
+                  <div class="text-left space-y-3">
+                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                      {" "}
+                      Github{" "}
+                    </p>
+                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                      {" "}
+                      Docker{" "}
+                    </p>
+                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                      {" "}
+                      PostgreSQL{" "}
+                    </p>
+                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                      {" "}
+                      Vercel{" "}
+                    </p>
+                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                      {" "}
+                      VSCode{" "}
+                    </p>
+                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                      {" "}
+                      InteliJ{" "}
+                    </p>
+                  </div>
+                </div>
                 </div>
               </div>
             </div>

@@ -7,6 +7,7 @@ const navItems = [
   { name: "About", href: "#about" },
   { name: "Projects", href: "#projects" },
   { name: "Contact", href: "#contact" },
+  // { name: "Pictures", href: "#pictures" },
 ];
 
 export const NavBar = () => {
@@ -34,21 +35,18 @@ export const NavBar = () => {
           className="text-xl font-bold text-primary flex items-center"
           href="#hero"
         >
-          <span className="relative z-10">
-            <span className="text-glow text-foreground">
-              Amoli Patel's
-            </span>{" "}
-            Portfolio
-          </span>
+          <img
+            src="/images/favicon.png"
+            alt="Amoli logo"
+            className="h-8 w-8 mr-2"
+          />
         </a>
 
         {/* Toggle Button (Mobile) */}
         <button
           className="md:hidden z-50 text-foreground focus:outline-none"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          
-        </button>
+        ></button>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-8">
@@ -65,19 +63,22 @@ export const NavBar = () => {
 
         {/* Mobile Navigation */}
 
-        <button onClick={() => setIsMenuOpen((prev) => !prev)}
-        className="md:hidden p-2 text-foreground z-50"
-        aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          >
+        <button
+          onClick={() => setIsMenuOpen((prev) => !prev)}
+          className="md:hidden p-2 text-foreground z-50"
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+        >
           {" "}
-          {isMenuOpen ? <X size={24} /> : <Menu size={24}/>} {" "}
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}{" "}
         </button>
 
         <div
           className={cn(
             "fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center",
             "transition-all duration-300 md:hidden",
-            isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+            isMenuOpen
+              ? "opacity-100 pointer-events-auto"
+              : "opacity-0 pointer-events-none"
           )}
         >
           <div className="flex flex-col space-y-8 text-xl">
