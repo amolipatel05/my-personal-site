@@ -36,7 +36,7 @@ export const NavBar = () => {
           href="#hero"
         >
           <img
-            src="/images/favicon.png"
+            src="/images/favicon.ico"
             alt="Amoli logo"
             className="h-8 w-8 mr-2"
           />
