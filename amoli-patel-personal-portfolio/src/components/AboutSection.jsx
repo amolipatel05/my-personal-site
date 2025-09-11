@@ -40,7 +40,7 @@ export const AboutSection = () => {
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 
              transition-all duration-300 transform hover:scale-105"
               >
-                Download resume
+                View resume
               </a>
             </div>
           </div>
