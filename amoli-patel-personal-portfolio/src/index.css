@@ -89,13 +89,7 @@
 
     --border: 213 32% 91%;
 
-    --blob-1: #f7f5f0;
-    --blob-2: #332e34;
-    --blob-3: #a1a998;
-    --blob-4: #f1eadc;
-    --blob-5: #5e2011;
-    --blob-6: #d2b7ae;
-    --blob-7: #bacebc;
+    --primary-text: 0, 100%, 0%;
   }
 
   /* Dark mode */
@@ -109,6 +103,8 @@
     --primary-foreground: 213 31% 91%;
 
     --border: 217 33% 20%;
+
+    --primary-text: 0, 100%, 100%;
   }
 
   * {
