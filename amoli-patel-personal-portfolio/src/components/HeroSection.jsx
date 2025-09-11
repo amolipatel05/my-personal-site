@@ -24,7 +24,7 @@ export const HeroSection = () => {
             <img
               src="/images/headshot.png"
               alt="Amoli Patel"
-              className="w-100 h-70 object-cover rounded-br-lg shadow-lg shadow-black/50 opacity-5 animate-fade-in-delay-3"
+              className="w-100 h-70 object-cover card-hover rounded-br-lg shadow-lg shadow-black/50 opacity-5 animate-fade-in-delay-3"
             ></img>
           </div>
 
