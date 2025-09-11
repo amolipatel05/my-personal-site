@@ -174,30 +174,6 @@
     hover:scale-105 active:scale-95;
 }
 
-@utility blob-layer {
-  @apply fixed inset-0 -z-10 hidden;
-  background: #f5f5f5;
-}
-
-.blobs-on .blob-layer {
-  display: block;
-}
-
-@utility blob {
-  @apply absolute rounded-[55%] opacity-70;
-  filter: blur(80px);
-  animation: var(--animate-blob-float), var(--animate-blob-morph);
-  mix-blend-mode: multiply;
-
-  animation: var(--animate-blob-float), var(--animate-blob-morph);
-  will-change: transform, border-radius;
-
-  background: radial-gradient(
-    circle at 30% 30%,
-    var(--blob-color, var(--blob-1)),
-    transparent 60%
-  );
-}
 
 #root {
   max-width: 100%;
