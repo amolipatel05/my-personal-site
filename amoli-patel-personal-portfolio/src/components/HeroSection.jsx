@@ -24,13 +24,13 @@ export const HeroSection = () => {
             <img
               src="/images/headshot.png"
               alt="Amoli Patel"
-              className="w-100 h-70 object-cover card-hover rounded-br-lg shadow-lg shadow-black/50 opacity-5 animate-fade-in-delay-3"
+              className="w-100 h-70 object-cover card-hover rounded-4xl shadow-lg shadow-black/50 opacity-5 animate-fade-in-delay-3"
             ></img>
           </div>
 
-          <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-4">
+          {/* <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-4">
             can add text here
-          </p>
+          </p> */}
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
             <a href="#projects" className="cosmic-button">
               View My Work
