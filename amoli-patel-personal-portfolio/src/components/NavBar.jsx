@@ -36,8 +36,8 @@ export const NavBar = () => {
           href="#hero"
         >
           <img
-            src="/images/favicon.ico"
-            className="h-8 w-8 mr-2"
+          src="/images/faviconv2.png"
+            className="h-8 w-8 mr-2 "
           />
         </a>
 

@@ -78,7 +78,7 @@
 
 @layer base {
   :root {
-    /* Light mode (with blobs) */
+    /* Light mode */
     --background: 0 0% 94%;
     --foreground: 222 47% 11%;
 
@@ -90,6 +90,7 @@
     --border: 213 32% 91%;
 
     --primary-text: 0, 100%, 0%;
+
   }
 
   /* Dark mode */
@@ -105,6 +106,7 @@
     --border: 217 33% 20%;
 
     --primary-text: 0, 100%, 100%;
+
   }
 
   * {
@@ -170,7 +172,6 @@
     hover:scale-105 active:scale-95;
 }
 
-
 #root {
   max-width: 100%;
   margin: 0 auto;
@@ -180,13 +181,42 @@
 
 /* LIGHT MODE: show blob background on <html>, make body transparent so it doesn't cover it */
 html:not(.dark) {
-  background:
-    radial-gradient(60vw 60vw at 15% 20%, rgba(247,245,240,0.95) 0%, rgba(247,245,240,0.55) 35%, transparent 60%),
-    radial-gradient(50vw 50vw at 75% 15%, rgba(210,183,174,0.90) 0%, rgba(210,183,174,0.45) 30%, transparent 60%),
-    radial-gradient(48vw 48vw at 80% 70%, rgba(168,116,87,0.85) 0%, rgba(168,116,87,0.40) 28%, transparent 60%),
-    radial-gradient(54vw 54vw at 35% 75%, rgba(169,159,152,0.85) 0%, rgba(169,159,152,0.45) 32%, transparent 62%),
-    radial-gradient(45vw 45vw at 55% 50%, rgba(86,69,60,0.70) 0%, rgba(86,69,60,0.35) 24%, transparent 58%),
-    radial-gradient(40vw 40vw at 12% 75%, rgba(51,46,52,0.50) 0%, rgba(51,46,52,0.25) 22%, transparent 58%),
+  background: radial-gradient(
+      60vw 60vw at 15% 20%,
+      rgba(247, 245, 240, 0.95) 0%,
+      rgba(247, 245, 240, 0.55) 35%,
+      transparent 60%
+    ),
+    radial-gradient(
+      50vw 50vw at 75% 15%,
+      rgba(210, 183, 174, 0.9) 0%,
+      rgba(210, 183, 174, 0.45) 30%,
+      transparent 60%
+    ),
+    radial-gradient(
+      48vw 48vw at 80% 70%,
+      rgba(168, 116, 87, 0.85) 0%,
+      rgba(168, 116, 87, 0.4) 28%,
+      transparent 60%
+    ),
+    radial-gradient(
+      54vw 54vw at 35% 75%,
+      rgba(169, 159, 152, 0.85) 0%,
+      rgba(169, 159, 152, 0.45) 32%,
+      transparent 62%
+    ),
+    radial-gradient(
+      45vw 45vw at 55% 50%,
+      rgba(86, 69, 60, 0.7) 0%,
+      rgba(86, 69, 60, 0.35) 24%,
+      transparent 58%
+    ),
+    radial-gradient(
+      40vw 40vw at 12% 75%,
+      rgba(51, 46, 52, 0.5) 0%,
+      rgba(51, 46, 52, 0.25) 22%,
+      transparent 58%
+    ),
     #ffffff;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -201,4 +231,3 @@ html:not(.dark) body {
 html.dark {
   background: hsl(var(--background));
 }
-

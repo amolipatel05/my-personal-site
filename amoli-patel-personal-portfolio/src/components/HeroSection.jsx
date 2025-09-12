@@ -18,6 +18,7 @@ export const HeroSection = () => {
               {" "}
               Patel
             </span>
+            
           </h1>
 
           <div className="flex justify-center pt-4">
