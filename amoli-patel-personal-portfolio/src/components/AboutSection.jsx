@@ -1,4 +1,4 @@
-import { Hammer, Code, Book } from "lucide-react";
+import { Hammer, Code, Book, Pin } from "lucide-react";
 import { PicturesSection } from "./PicturesSection";
 
 export const AboutSection = () => {
@@ -23,14 +23,26 @@ export const AboutSection = () => {
               applications and creating seamless user experiences.
             </p>
             <p className="text-muted-foreground">
-              in my downtime, i enjoy trying new crafty hobbies, cheffin it up in the
-              kitchen, spending time outside, or browsing on pinterest and
-              depop.
+              in my downtime, i enjoy trying new crafty hobbies, cheffin it up
+              in the kitchen, spending time outside, or browsing on pinterest
+              and depop.
             </p>
+            <p>see what i'm into right now: </p>
+            <div className="flex justify-center items-center gap-2 text-muted-foreground">
+              <a href="https://www.pinterest.com/amolixpatel/" target="_blank">
+                <div className="flex justify-center">
+                  {" "}
+                  <Pin /> <p>my pinterest</p>
+                </div>
+              </a>
+            </div>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-              <a href="#contact" className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 
-             transition-all duration-300 transform hover:scale-105">
+              <a
+                href="#contact"
+                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 
+             transition-all duration-300 transform hover:scale-105"
+              >
                 Get in touch
               </a>
 
@@ -94,7 +106,9 @@ export const AboutSection = () => {
                   <Book className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg pb-2">frameworks and libraries</h4>
+                  <h4 className="font-semibold text-lg pb-2">
+                    frameworks and libraries
+                  </h4>
                   <div class="text-left space-y-3">
                     <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
                       {" "}
@@ -141,34 +155,36 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Web Development</h4>
                   <div className="text-left">
-                  <h4 className="font-semibold text-lg pb-2">frameworks and libraries</h4>
-                  <div class="text-left space-y-3">
-                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
-                      {" "}
-                      Github{" "}
-                    </p>
-                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
-                      {" "}
-                      Docker{" "}
-                    </p>
-                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
-                      {" "}
-                      PostgreSQL{" "}
-                    </p>
-                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
-                      {" "}
-                      Vercel{" "}
-                    </p>
-                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
-                      {" "}
-                      VSCode{" "}
-                    </p>
-                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
-                      {" "}
-                      InteliJ{" "}
-                    </p>
+                    <h4 className="font-semibold text-lg pb-2">
+                      frameworks and libraries
+                    </h4>
+                    <div class="text-left space-y-3">
+                      <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                        {" "}
+                        Github{" "}
+                      </p>
+                      <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                        {" "}
+                        Docker{" "}
+                      </p>
+                      <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                        {" "}
+                        PostgreSQL{" "}
+                      </p>
+                      <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                        {" "}
+                        Vercel{" "}
+                      </p>
+                      <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                        {" "}
+                        VSCode{" "}
+                      </p>
+                      <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                        {" "}
+                        InteliJ{" "}
+                      </p>
+                    </div>
                   </div>
-                </div>
                 </div>
               </div>
             </div>
