@@ -45,7 +45,6 @@ export const AboutSection = () => {
               >
                 Get in touch
               </a>
-
             </div>
           </div>
 
@@ -64,15 +63,19 @@ export const AboutSection = () => {
                     </p>
                     <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
                       {" "}
-                      Python{" "}
-                    </p>
-                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
-                      {" "}
                       TypeScript{" "}
                     </p>
                     <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
                       {" "}
                       JavaScript{" "}
+                    </p>
+                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                      {" "}
+                      JavaScript{" "}
+                    </p>
+                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                      {" "}
+                      Python{" "}
                     </p>
                     <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
                       {" "}
@@ -103,7 +106,7 @@ export const AboutSection = () => {
                   <div class="text-left space-y-3">
                     <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
                       {" "}
-                      React{" "}
+                      React.js{" "}
                     </p>
                     <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
                       {" "}
@@ -111,15 +114,19 @@ export const AboutSection = () => {
                     </p>
                     <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
                       {" "}
-                      Tailwind CSS{" "}
-                    </p>
-                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
-                      {" "}
                       Node.js{" "}
                     </p>
                     <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
                       {" "}
-                      Bun{" "}
+                      Spring Boot{" "}
+                    </p>
+                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                      {" "}
+                      ReactECharts{" "}
+                    </p>
+                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                      {" "}
+                      Tailwind CSS{" "}
                     </p>
                     <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
                       {" "}
@@ -127,11 +134,7 @@ export const AboutSection = () => {
                     </p>
                     <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
                       {" "}
-                      Prisma{" "}
-                    </p>
-                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
-                      {" "}
-                      JUnit{" "}
+                      Prisma ORM{" "}
                     </p>
                   </div>
                 </div>
@@ -147,7 +150,7 @@ export const AboutSection = () => {
                   <h4 className="font-semibold text-lg">Web Development</h4>
                   <div className="text-left">
                     <h4 className="font-semibold text-lg pb-2">
-                      frameworks and libraries
+                      tools and platforms
                     </h4>
                     <div class="text-left space-y-3">
                       <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
@@ -160,7 +163,27 @@ export const AboutSection = () => {
                       </p>
                       <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
                         {" "}
+                        Amazon ElastiCache{" "}
+                      </p>
+                      <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                        {" "}
+                        oTree{" "}
+                      </p>
+                      <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                        {" "}
+                        Heroku{" "}
+                      </p>
+                      <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                        {" "}
+                        Claude Code{" "}
+                      </p>
+                      <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                        {" "}
                         PostgreSQL{" "}
+                      </p>
+                      <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                        {" "}
+                        Bun{" "}
                       </p>
                       <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
                         {" "}
@@ -168,13 +191,34 @@ export const AboutSection = () => {
                       </p>
                       <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
                         {" "}
-                        VSCode{" "}
-                      </p>
-                      <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
-                        {" "}
-                        InteliJ{" "}
+                        Figma{" "}
                       </p>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="gradient-border p-6 card-hover">
+              <div className="flex items-start gap-4">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <Book className="h-6 w-6 text-primary" />
+                </div>
+                <div className="text-left">
+                  <h4 className="font-semibold text-lg pb-2">Methodoligies</h4>
+                  <div class="text-left space-y-3">
+                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                      {" "}
+                      Agile{" "}
+                    </p>
+                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                      {" "}
+                      Scrum{" "}
+                    </p>
+                    <p class="bg-primary/10 rounded-sm p-2 mr-2 inline-block">
+                      {" "}
+                      Kanban{" "}
+                    </p>
                   </div>
                 </div>
               </div>
