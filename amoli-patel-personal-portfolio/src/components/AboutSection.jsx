@@ -46,15 +46,6 @@ export const AboutSection = () => {
                 Get in touch
               </a>
 
-              <a
-                href="/amoli-patel-resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 
-             transition-all duration-300 transform hover:scale-105"
-              >
-                View resume
-              </a>
             </div>
           </div>
 
